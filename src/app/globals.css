@@ -3,19 +3,119 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Default is Dark Mode (reversing normal Next.js defaults to start in dark luxury) */
+  --background: 3 7 18;        /* #030712 */
+  --foreground: 255 255 255;  /* #FFFFFF */
+  --primary: 37 99 235;       /* #2563EB */
+  --primary-hover: 29 78 216; /* #1D4ED8 */
+  --secondary: 6 182 212;     /* #06B6D4 */
+  --accent: 139 92 246;       /* #8B5CF6 */
+  --muted: 148 163 184;       /* #94A3B8 */
+  --surface: 17 24 39;        /* #111827 */
+  --surface-secondary: 31 41 55; /* #1F2937 */
+  --surface-border: 55 65 81; /* #374151 */
+  --success: 16 185 129;      /* #10B981 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Light mode overrides inside .light class */
+:root.light {
+  --background: 250 250 250;  /* #FAFAFA */
+  --foreground: 15 23 42;     /* #0F172A */
+  --primary: 37 99 235;       /* #2563EB */
+  --primary-hover: 29 78 216; /* #1D4ED8 */
+  --secondary: 8 145 178;     /* #0891B2 */
+  --accent: 124 58 237;       /* #7C3AED */
+  --muted: 100 116 139;       /* #64748B */
+  --surface: 255 255 255;     /* #FFFFFF */
+  --surface-secondary: 241 245 249; /* #F1F5F9 */
+  --surface-border: 226 232 240; /* #E2E8F0 */
+  --success: 16 185 129;      /* #10B981 */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground));
+  background-color: rgb(var(--background));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Premium UI Utilities */
+.glass-panel {
+  background: rgba(var(--surface), 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(var(--surface-border), 0.4);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(var(--surface), 0.85);
+  border-color: rgba(var(--primary), 0.4);
+  box-shadow: 0 10px 30px -10px rgba(var(--primary), 0.15);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, rgb(var(--foreground)) 30%, rgb(var(--secondary)) 100%);
+}
+
+.text-gradient-primary {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, rgb(var(--primary)) 0%, rgb(var(--accent)) 100%);
+}
+
+/* Dots and Grid Overlay patterns */
+.grid-dots {
+  background-image: radial-gradient(rgba(var(--foreground), 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* High-end glow filters */
+.glow-blur {
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--surface-secondary));
+  border-radius: 4px;
+  border: 2px solid rgb(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--primary));
+}
+
+/* Timeline Custom styles */
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background-color: rgb(var(--primary));
+  border-radius: 50%;
 }
