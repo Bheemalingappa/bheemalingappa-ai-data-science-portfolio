@@ -92,8 +92,8 @@ export default function MinimalContact() {
               <Phone className="w-5 h-5 text-accent" />
               <div>
                 <div className="text-[9px] font-mono text-muted uppercase">Phone</div>
-                <a href="tel:+917349041057" className="text-sm font-bold hover:text-primary transition-colors font-mono">
-                  +91 7349041057
+                <a href="tel:+917349043057" className="text-sm font-bold hover:text-primary transition-colors font-mono">
+                  +91 7349043057
                 </a>
               </div>
             </div>
