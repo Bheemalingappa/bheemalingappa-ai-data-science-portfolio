@@ -82,8 +82,8 @@ export default function MinimalContact() {
               <Mail className="w-5 h-5 text-primary" />
               <div>
                 <div className="text-[9px] font-mono text-muted uppercase">Email</div>
-                <a href="mailto:baimabhima2000@gmail.com" className="text-sm font-bold hover:text-primary transition-colors font-mono">
-                  baimabhima2000@gmail.com
+                <a href="mailto:bhimubhimu2000@gmail.com" className="text-sm font-bold hover:text-primary transition-colors font-mono">
+                  bhimubhimu2000@gmail.com
                 </a>
               </div>
             </div>
