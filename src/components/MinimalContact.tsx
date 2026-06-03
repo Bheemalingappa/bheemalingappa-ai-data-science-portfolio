@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, MapPin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function MinimalContact() {
@@ -82,8 +82,18 @@ export default function MinimalContact() {
               <Mail className="w-5 h-5 text-primary" />
               <div>
                 <div className="text-[9px] font-mono text-muted uppercase">Email</div>
-                <a href="mailto:bhimubhimu2000@gmail.com" className="text-sm font-bold hover:text-primary transition-colors font-mono">
-                  bhimubhimu2000@gmail.com
+                <a href="mailto:baimabhima2000@gmail.com" className="text-sm font-bold hover:text-primary transition-colors font-mono">
+                  baimabhima2000@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div className="glass-panel border-surface-border/50 rounded-2xl p-5 flex items-center space-x-3">
+              <Phone className="w-5 h-5 text-accent" />
+              <div>
+                <div className="text-[9px] font-mono text-muted uppercase">Phone</div>
+                <a href="tel:+917349041057" className="text-sm font-bold hover:text-primary transition-colors font-mono">
+                  +91 7349041057
                 </a>
               </div>
             </div>
@@ -92,7 +102,7 @@ export default function MinimalContact() {
               <MapPin className="w-5 h-5 text-secondary" />
               <div>
                 <div className="text-[9px] font-mono text-muted uppercase">Location</div>
-                <div className="text-sm font-bold">Bengaluru, India</div>
+                <div className="text-sm font-bold">Bengaluru, Karnataka, India</div>
               </div>
             </div>
 
@@ -112,7 +122,7 @@ export default function MinimalContact() {
                   <span>GitHub</span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/bheema-boler-a7a6241b6"
+                  href="https://linkedin.com/in/bheema-boler-a7af3b1b6"
                   target="_blank"
                   rel="noreferrer"
                   className="flex-1 flex items-center justify-center space-x-2 bg-surface hover:bg-surface-secondary border border-surface-border/60 p-2.5 rounded-xl text-xs font-semibold transition-all duration-300"

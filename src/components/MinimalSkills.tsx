@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Code2, BarChart3, Brain, Sparkles, Languages, Database } from "lucide-react";
+import { Code2, Library, BarChart3, Brain, Languages, PieChart, Database, Terminal } from "lucide-react";
 
 interface SkillSet {
   category: string;
@@ -12,34 +12,44 @@ interface SkillSet {
 export default function MinimalSkills() {
   const skills: SkillSet[] = [
     {
-      category: "Programming",
+      category: "Programming Languages",
       icon: <Code2 className="w-4 h-4 text-primary" />,
-      tools: ["Python", "SQL", "Java", "JavaScript"],
+      tools: ["Python", "SQL"],
+    },
+    {
+      category: "Python Libraries",
+      icon: <Library className="w-4 h-4 text-secondary" />,
+      tools: ["Pandas", "NumPy", "Scikit-Learn", "Matplotlib", "Seaborn", "Plotly", "NLTK", "Transformers"],
     },
     {
       category: "Data Analytics",
-      icon: <BarChart3 className="w-4 h-4 text-secondary" />,
-      tools: ["Pandas", "NumPy", "Power BI", "Tableau", "Excel"],
+      icon: <BarChart3 className="w-4 h-4 text-accent" />,
+      tools: ["Data Cleaning", "Data Wrangling", "Exploratory Data Analysis (EDA)", "Statistical Analysis", "KPI Analysis"],
     },
     {
       category: "Machine Learning",
-      icon: <Brain className="w-4 h-4 text-accent" />,
-      tools: ["Scikit-Learn", "Regression", "Classification", "Clustering", "Feature Engineering"],
-    },
-    {
-      category: "Artificial Intelligence",
-      icon: <Sparkles className="w-4 h-4 text-primary" />,
-      tools: ["Generative AI", "Prompt Engineering", "LLM APIs Integration", "AI Agents"],
+      icon: <Brain className="w-4 h-4 text-primary" />,
+      tools: ["Regression", "Classification", "Clustering", "Feature Engineering", "Model Evaluation"],
     },
     {
       category: "Natural Language Processing",
       icon: <Languages className="w-4 h-4 text-secondary" />,
-      tools: ["Sentiment Analysis", "Text Classification", "RoBERTa", "VADER", "Detoxify"],
+      tools: ["Sentiment Analysis", "Text Preprocessing", "Tokenization", "Transformer Models"],
     },
     {
-      category: "Databases & Tools",
-      icon: <Database className="w-4 h-4 text-accent" />,
-      tools: ["MySQL", "NoSQL / MongoDB", "Git / GitHub", "Flask / Streamlit"],
+      category: "Visualization Tools",
+      icon: <PieChart className="w-4 h-4 text-accent" />,
+      tools: ["Power BI", "Tableau", "Plotly", "Matplotlib", "Seaborn"],
+    },
+    {
+      category: "Databases",
+      icon: <Database className="w-4 h-4 text-primary" />,
+      tools: ["MySQL", "NoSQL"],
+    },
+    {
+      category: "Tools & Platforms",
+      icon: <Terminal className="w-4 h-4 text-secondary" />,
+      tools: ["Git", "GitHub", "Streamlit", "Flask", "Jupyter Notebook", "VS Code", "Google Colab"],
     },
   ];
 

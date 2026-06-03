@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
-import { ExternalLink } from "lucide-react";
 
 interface ProjectCase {
   title: string;
   category: string;
-  problem: string;
-  solution: string;
+  description: string[];
   tech: string[];
   metric: string;
   metricLabel: string;
@@ -16,40 +14,56 @@ interface ProjectCase {
 export default function MinimalProjects() {
   const cases: ProjectCase[] = [
     {
-      title: "Twitter Sentiment Analysis Platform",
+      title: "Twitter Sentiment Analysis Web Application",
       category: "Natural Language Processing",
-      problem: "Brands lack real-time signals for customer sentiment and toxicity on social media.",
-      solution: "Engineered a Python pipeline using RoBERTa transformers and VADER heuristics to score sentiment and toxic profanities, serving outputs to a Flask/Streamlit dashboard.",
-      tech: ["Python", "Flask", "Streamlit", "RoBERTa", "VADER", "Detoxify"],
+      description: [
+        "Developed a real-time Twitter sentiment analysis platform.",
+        "Implemented RoBERTa Transformer, VADER sentiment analysis, emotion classification, and toxicity detection.",
+        "Integrated Twitter APIs for real-time tweet collection and processing.",
+        "Built interactive dashboards to visualize sentiment trends and insights."
+      ],
+      tech: ["Python", "NLP", "Streamlit", "Flask", "Twitter API", "RoBERTa", "VADER", "Detoxify"],
       metric: "95.7%",
       metricLabel: "Accuracy Score",
     },
     {
       title: "Jarvis AI Assistant",
       category: "AI & Automation",
-      problem: "Toggling between search tabs, terminals, and editor tasks interrupts developer flow.",
-      solution: "Built a local voice-activated terminal operating assistant that runs command flows (STT/TTS signals), scheduling tasks, and executing OS operations.",
-      tech: ["SpeechRecognition", "Pyttsx3", "Python API", "OS Hooks"],
+      description: [
+        "Developed a voice-controlled AI assistant for automation tasks.",
+        "Integrated speech recognition and text-to-speech technologies.",
+        "Enabled web search, application launching, and voice command execution.",
+        "Improved user interaction through natural language communication."
+      ],
+      tech: ["Python", "NLP", "Speech Recognition", "TTS", "OS Automation"],
       metric: "120ms",
       metricLabel: "Command Latency",
     },
     {
-      title: "Customer Churn Prediction",
+      title: "Customer Churn Prediction Pipeline",
       category: "Machine Learning & Analytics",
-      problem: "High subscriber churn levels decrease company lifetime value metrics.",
-      solution: "Analyzed relational user databases, resolved class imbalances using SMOTE algorithms, and trained an XGBoost classifier to isolate high-risk customer profiles.",
-      tech: ["Python", "Scikit-Learn", "XGBoost", "SMOTE", "Power BI"],
+      description: [
+        "Analyzed transactional customer behavior and isolated key attrition drivers.",
+        "Resolved class imbalance using SMOTE oversampling to improve model sensitivity.",
+        "Trained and tuned an XGBoost classifier to predict high-risk churn profiles.",
+        "Created risk segmentation files to support targeted retention outreach."
+      ],
+      tech: ["Python", "Scikit-Learn", "XGBoost", "SMOTE", "Exploratory Data Analysis"],
       metric: "0.923",
-      metricLabel: "AUC-ROC Metric",
+      metricLabel: "AUC-ROC Score",
     },
     {
-      title: "Sales Intelligence Dashboard",
-      category: "Business Intelligence",
-      problem: "Spreadsheet reports delay identifying rolling average targets and local sales drops.",
-      solution: "Designed SQL transactional schemas and built Power BI dashboards using custom DAX query measures to track daily variance limits.",
-      tech: ["Power BI", "SQL Queries", "DAX Formulas", "Data Modeling"],
+      title: "Sales Intelligence BI Dashboard",
+      category: "Business Intelligence & Visualization",
+      description: [
+        "Designed clean SQL database schemas to combine regional transactions.",
+        "Formulated complex DAX query measures for rolling averages and year-over-year growth.",
+        "Developed interactive reports in Power BI and Tableau to track core sales KPIs.",
+        "Improved cross-team sales forecasting latency and visualization clarity."
+      ],
+      tech: ["Power BI", "Tableau", "SQL Queries", "DAX Formulas", "Data Modeling"],
       metric: "60%",
-      metricLabel: "Load Latency Drop",
+      metricLabel: "Data Load Speedup",
     },
   ];
 
@@ -80,16 +94,13 @@ export default function MinimalProjects() {
                   <h4 className="text-xl font-bold mt-2 text-foreground">{c.title}</h4>
                 </div>
 
-                <div className="space-y-2">
-                  <div className="text-xs">
-                    <strong className="text-foreground/90 uppercase font-mono text-[9px] tracking-wider block">Problem</strong>
-                    <span className="text-muted leading-relaxed">{c.problem}</span>
-                  </div>
-                  <div className="text-xs">
-                    <strong className="text-foreground/90 uppercase font-mono text-[9px] tracking-wider block">Solution</strong>
-                    <span className="text-muted leading-relaxed">{c.solution}</span>
-                  </div>
-                </div>
+                <ul className="space-y-1.5 list-disc pl-4 text-xs text-muted leading-relaxed">
+                  {c.description.map((desc, idx) => (
+                    <li key={idx} className="marker:text-primary">
+                      {desc}
+                    </li>
+                  ))}
+                </ul>
 
                 <div className="flex flex-wrap gap-1.5 pt-1">
                   {c.tech.map((t, idx) => (

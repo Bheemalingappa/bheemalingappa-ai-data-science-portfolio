@@ -15,26 +15,26 @@ export default function MinimalAbout() {
   const timeline: TimelineItem[] = [
     {
       year: "2022",
-      title: "Started Engineering Journey",
-      description: "Focused on core programming principles, databases, Java, and SQL.",
+      title: "Academic Foundation",
+      description: "Began Bachelor of Engineering (B.E.) at AMC Engineering College, focusing on programming, databases, and core computer science concepts.",
       icon: <Code className="w-4 h-4" />,
     },
     {
-      year: "2024",
-      title: "Data Science Exploration",
-      description: "Mastered statistical analysis, exploratory data tools, and Power BI dashboards.",
+      year: "2025",
+      title: "Hands-on Industry Practice",
+      description: "Completed Data Science & Analytics training with Simplilearn, followed by a Data Science & Data Analytics Internship at Cognifyz Technologies.",
       icon: <Compass className="w-4 h-4" />,
     },
     {
       year: "2025",
-      title: "Built AI and NLP Projects",
-      description: "Engineered real-time sentiment platforms and voice automated assistant models.",
+      title: "AI & NLP Development",
+      description: "Engineered real-time Twitter sentiment analysis systems using RoBERTa and developed the voice-controlled Jarvis AI assistant.",
       icon: <BrainCircuit className="w-4 h-4" />,
     },
     {
       year: "2026",
-      title: "Pursuing Data Science & AI Career",
-      description: "Focusing on enterprise integrations, data products, and business insights.",
+      title: "Professional Launch",
+      description: "Graduating with B.E. degree (CGPA: 7.23/10) and actively stepping into full-time roles in Data Analytics & Data Science.",
       icon: <Target className="w-4 h-4" />,
     },
   ];
@@ -58,13 +58,13 @@ export default function MinimalAbout() {
               <span>Professional Summary</span>
             </h4>
             <p>
-              I am a highly motivated Data Scientist and Machine Learning Engineer who builds end-to-end intelligent systems. I enjoy bridging the gap between numbers, algorithms, and actual software tools.
+              I am an aspiring Data Analyst and Data Science professional with hands-on experience in Data Analytics, Machine Learning, Natural Language Processing, and Business Intelligence. I specialize in turning raw complex datasets into actionable business intelligence insights.
             </p>
             <p>
-              My work spans data analytics (writing complex SQL and aggregating datasets), machine learning (training predictive classification pipelines), and generative AI (deploying NLP models and voice-activated OS automation scripts).
+              My expertise covers writing optimized SQL queries, constructing predictive ML model pipelines, training transformer-based NLP models, and building interactive BI reports using Power BI and Tableau.
             </p>
             <p>
-              Throughout my journey, my focus has been on translating raw data vectors into visual dashboard interfaces and server endpoints that deliver immediate, measurable business impact.
+              I hold a Bachelor of Engineering (B.E.) degree from AMC Engineering College, Bengaluru (2022 - 2026) with a CGPA of 7.23 / 10, bringing strong academic and practical fundamentals to every technical challenge.
             </p>
           </div>
 

@@ -7,10 +7,10 @@ import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function MinimalHero() {
   const stats = [
-    { value: "2+", label: "Professional Trainings" },
-    { value: "10+", label: "Technologies Mastered" },
-    { value: "5+", label: "End-to-End Projects" },
-    { value: "1000+", label: "Hours of ML Learning" },
+    { value: "2", label: "Internships & Trainings" },
+    { value: "8", label: "Core Skill Categories" },
+    { value: "2", label: "Key AI Projects" },
+    { value: "3", label: "Verified Credentials" },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function MinimalHero() {
           className="inline-flex items-center space-x-2 bg-surface/50 border border-surface-border/40 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md"
         >
           <Sparkles className="w-3.5 h-3.5 text-secondary animate-pulse" />
-          <span className="text-muted">Data Scientist | ML Engineer | AI Developer</span>
+          <span className="text-muted">Data Analyst &bull; Data Scientist &bull; ML Enthusiast</span>
         </motion.div>
 
         <div className="space-y-4">
@@ -58,7 +58,7 @@ export default function MinimalHero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-xl md:text-2xl font-bold font-mono tracking-tight text-foreground/80 mt-2"
           >
-            Transforming Data Into Intelligent Decisions
+            Data Analyst &amp; Data Scientist
           </motion.h2>
         </div>
 
@@ -68,7 +68,7 @@ export default function MinimalHero() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-base md:text-lg text-muted max-w-2xl mx-auto leading-relaxed"
         >
-          I build intelligent systems that transform raw data into actionable business insights using Analytics, Machine Learning, Artificial Intelligence, and Natural Language Processing.
+          Aspiring Data Analyst and Data Science professional with hands-on experience in Data Analytics, Machine Learning, Natural Language Processing, and Business Intelligence. Skilled in Python, SQL, Power BI, Tableau, and data visualization.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -87,8 +87,8 @@ export default function MinimalHero() {
           </a>
 
           <a
-            href="/resume.pdf"
-            download="Bheemalingappa_Resume.pdf"
+            href="/Bheema_Resume.pdf"
+            download="Bheema_Resume.pdf"
             className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-surface hover:bg-surface-secondary border border-surface-border text-foreground px-6 py-3.5 rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-0.5"
           >
             <span>Download CV</span>
@@ -106,7 +106,7 @@ export default function MinimalHero() {
               <GithubIcon className="w-4.5 h-4.5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/bheema-boler-a7a6241b6"
+              href="https://linkedin.com/in/bheema-boler-a7af3b1b6"
               target="_blank"
               rel="noreferrer"
               className="p-3.5 bg-surface hover:bg-surface-secondary border border-surface-border rounded-xl text-muted hover:text-foreground transition-all duration-300"

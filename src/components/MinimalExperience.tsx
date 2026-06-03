@@ -14,26 +14,29 @@ interface Job {
 export default function MinimalExperience() {
   const experiences: Job[] = [
     {
-      company: "Cognifyz Technologies",
-      role: "Data Science Intern",
+      company: "Cognifyz Technologies (Remote)",
+      role: "Data Science & Data Analytics Intern",
       duration: "2025",
       description: [
-        "Performed data extraction, data profiling, and statistical cleaning of raw database tables.",
-        "Created correlation heatmaps and predictive analytics models using Python.",
-        "Designed data visualization reports mapping key performance metrics for brand auditing.",
+        "Performed data cleaning, preprocessing, and exploratory data analysis using Python, Pandas, and NumPy.",
+        "Created visualizations using Matplotlib and Seaborn to identify business trends and insights.",
+        "Worked with SQL queries for data extraction, transformation, and reporting.",
+        "Applied machine learning techniques for predictive analytics and model evaluation.",
+        "Generated dashboard-ready reports for business intelligence applications."
       ],
-      skills: ["Python", "Exploratory Data Analysis", "Data Cleaning", "Statistical Modeling"],
+      skills: ["Python", "Pandas", "NumPy", "EDA", "SQL Queries", "Machine Learning", "Dashboard Reporting"],
     },
     {
-      company: "Simplilearn",
-      role: "Data Science Certification Training",
-      duration: "2024",
+      company: "Simplilearn (Remote)",
+      role: "Data Science & Analytics Trainee",
+      duration: "2025",
       description: [
-        "Underwent rigorous training in statistical computing, database modeling, and predictive modeling.",
-        "Mastered complex SQL database queries, joins, and indexing structures.",
-        "Engineered business intelligence reporting dashboards in Power BI and Tableau using advanced DAX.",
+        "Completed practical training in Data Analytics, Machine Learning, and Business Intelligence.",
+        "Developed mini-projects using Python, SQL, Power BI, and Tableau.",
+        "Implemented regression, classification, and clustering algorithms on real-world datasets.",
+        "Strengthened analytical and reporting skills through hands-on case studies."
       ],
-      skills: ["SQL", "Machine Learning Core", "Power BI / DAX", "Data Storytelling"],
+      skills: ["Data Analytics", "Machine Learning", "Business Intelligence", "Python", "SQL", "Power BI", "Tableau"],
     },
   ];
 
