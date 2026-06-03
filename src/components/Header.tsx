@@ -36,10 +36,9 @@ export default function Header() {
   const navLinks = [
     { label: "Story", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Value", href: "#why-hire-me" },
-    { label: "Case Studies", href: "#projects" },
-    { label: "Lab", href: "#data-science-lab" },
-    { label: "Blog", href: "#blog" },
+    { label: "Experience", href: "#experience" },
+    { label: "Projects", href: "#projects" },
+    { label: "Certifications", href: "#certifications" },
     { label: "Contact", href: "#contact" },
   ];
 
