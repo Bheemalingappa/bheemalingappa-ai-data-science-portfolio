@@ -122,7 +122,7 @@ export default function MinimalContact() {
                   <span>GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com/in/bheema-boler-a7af3b1b6"
+                  href="https://www.linkedin.com/in/bheema-lingappa-a7a6241b6"
                   target="_blank"
                   rel="noreferrer"
                   className="flex-1 flex items-center justify-center space-x-2 bg-surface hover:bg-surface-secondary border border-surface-border/60 p-2.5 rounded-xl text-xs font-semibold transition-all duration-300"

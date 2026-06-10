@@ -58,13 +58,13 @@ export default function MinimalAbout() {
               <span>Professional Summary</span>
             </h4>
             <p>
-              I am an aspiring Data Analyst and Data Science professional with hands-on experience in Data Analytics, Machine Learning, Natural Language Processing, and Business Intelligence. I specialize in turning raw complex datasets into actionable business intelligence insights.
+              I am an aspiring Data Analyst with hands-on experience in Python, SQL, Power BI, Data Visualization, and Exploratory Data Analysis (EDA). I specialize in transforming raw data into actionable business insights through dashboards, statistical analysis, and reporting.
             </p>
             <p>
-              My expertise covers writing optimized SQL queries, constructing predictive ML model pipelines, training transformer-based NLP models, and building interactive BI reports using Power BI and Tableau.
+              My expertise covers writing optimized SQL queries, conducting exploratory analysis, constructing predictive modeling pipelines, and building interactive business intelligence dashboards.
             </p>
             <p>
-              I hold a Bachelor of Engineering (B.E.) degree from AMC Engineering College, Bengaluru (2022 - 2026) with a CGPA of 7.23 / 10, bringing strong academic and practical fundamentals to every technical challenge.
+              I hold a Bachelor of Engineering (B.E.) degree from AMC Engineering College, Bengaluru (2022 - 2026) with a CGPA of 7.23 / 10, bringing solid academic and practical foundations.
             </p>
           </div>
 

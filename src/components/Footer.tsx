@@ -36,7 +36,7 @@ export default function Footer() {
               <GithubIcon className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com/in/bheema-boler-a7af3b1b6"
+              href="https://www.linkedin.com/in/bheema-lingappa-a7a6241b6"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 bg-surface hover:bg-surface-secondary border border-surface-border text-muted hover:text-foreground rounded-xl transition-all duration-300"

@@ -21,69 +21,52 @@ interface ProjectCase {
 export default function MinimalProjects() {
   const cases: ProjectCase[] = [
     {
+      title: "Superstore Sales Analysis (Python)",
+      category: "Data Analytics & EDA",
+      description: [
+        "Performed end-to-end analysis on 9,800+ retail sales records using Python and Pandas.",
+        "Conducted data cleaning, preprocessing, and exploratory data analysis (EDA).",
+        "Analyzed regional performance, customer segments, category-wise sales, and monthly sales trends.",
+        "Created visualizations using Matplotlib and Seaborn to generate business insights.",
+        "Published project documentation and analysis workflow on GitHub."
+      ],
+      tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+      metric: "9.8K+",
+      metricLabel: "Records Analyzed",
+      links: [
+        { label: "Repository", url: "https://github.com/Bheemalingappa/Superstore-Sales-Analysis" }
+      ],
+    },
+    {
+      title: "Superstore Sales Analysis (Power BI)",
+      category: "Business Intelligence & Visualization",
+      description: [
+        "Designed and developed an interactive sales analytics dashboard using Power BI.",
+        "Built KPI cards for Total Sales, Total Orders, and Total Customers.",
+        "Created regional sales analysis, category performance reports, and customer segmentation dashboards.",
+        "Implemented dynamic filtering using Region and State slicers.",
+        "Enabled data-driven decision-making through business intelligence visualizations."
+      ],
+      tech: ["Power BI", "DAX", "Business Intelligence", "Data Visualization"],
+      metric: "KPIs",
+      metricLabel: "Dynamic Cards",
+      links: [
+        { label: "Repository", url: "https://github.com/Bheemalingappa/Superstore-PowerBI-Dashboard" }
+      ],
+    },
+    {
       title: "Twitter Sentiment Analysis Web Application",
       category: "Natural Language Processing",
       description: [
-        "Developed a real-time Twitter sentiment analysis platform.",
-        "Implemented RoBERTa Transformer, VADER sentiment analysis, emotion classification, and toxicity detection.",
-        "Integrated Twitter APIs for real-time tweet collection and processing.",
-        "Built interactive dashboards to visualize sentiment trends and insights."
+        "Developed a real-time Twitter sentiment analysis platform for social media analytics.",
+        "Implemented RoBERTa Transformer, VADER Sentiment Analysis, Emotion Classification, and Toxicity Detection.",
+        "Integrated Twitter APIs for real-time tweet collection and sentiment monitoring.",
+        "Built interactive dashboards to visualize sentiment trends and business insights."
       ],
       tech: ["Python", "NLP", "Streamlit", "Flask", "Twitter API", "RoBERTa", "VADER", "Detoxify"],
       metric: "95.7%",
       metricLabel: "Accuracy Score",
-      links: [
-        { label: "GitHub Repository", url: "https://github.com/Bheemalingappa" }
-      ],
-    },
-    {
-      title: "Jarvis AI Assistant",
-      category: "AI & Automation",
-      description: [
-        "Developed a voice-controlled AI assistant for automation tasks.",
-        "Integrated speech recognition and text-to-speech technologies.",
-        "Enabled web search, application launching, and voice command execution.",
-        "Improved user interaction through natural language communication."
-      ],
-      tech: ["Python", "NLP", "Speech Recognition", "TTS", "OS Automation"],
-      metric: "120ms",
-      metricLabel: "Command Latency",
-      links: [
-        { label: "GitHub Repository", url: "https://github.com/Bheemalingappa" }
-      ],
-    },
-    {
-      title: "Customer Churn Prediction Pipeline",
-      category: "Machine Learning & Analytics",
-      description: [
-        "Analyzed transactional customer behavior and isolated key attrition drivers.",
-        "Resolved class imbalance using SMOTE oversampling to improve model sensitivity.",
-        "Trained and tuned an XGBoost classifier to predict high-risk churn profiles.",
-        "Created risk segmentation files to support targeted retention outreach."
-      ],
-      tech: ["Python", "Scikit-Learn", "XGBoost", "SMOTE", "Exploratory Data Analysis"],
-      metric: "0.923",
-      metricLabel: "AUC-ROC Score",
-      links: [
-        { label: "GitHub Repository", url: "https://github.com/Bheemalingappa" }
-      ],
-    },
-    {
-      title: "Superstore Sales Analysis & Dashboard",
-      category: "Business Intelligence & Visualization",
-      description: [
-        "Performed transactional SQL queries and Python-based exploratory analysis on retail dataset.",
-        "Designed an interactive Power BI dashboard featuring dynamic KPIs, sales forecasts, and performance metrics.",
-        "Formulated complex DAX query measures for rolling averages, target variances, and year-over-year growth.",
-        "Documented end-to-end data modeling, ETL cleaning processes, and database optimizations."
-      ],
-      tech: ["Power BI", "SQL", "Python", "DAX Formulas", "Data Modeling", "ETL"],
-      metric: "60%",
-      metricLabel: "Load Speedup",
-      links: [
-        { label: "Sales Analysis Repo", url: "https://github.com/Bheemalingappa/Superstore-Sales-Analysis" },
-        { label: "PowerBI Dashboard Repo", url: "https://github.com/Bheemalingappa/Superstore-PowerBI-Dashboard" }
-      ],
+      links: [], // No repo link on the resume for this one
     },
   ];
 

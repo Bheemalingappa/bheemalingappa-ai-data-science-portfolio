@@ -58,7 +58,7 @@ export default function MinimalHero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-xl md:text-2xl font-bold font-mono tracking-tight text-foreground/80 mt-2"
           >
-            Data Analyst &amp; Data Scientist
+            Data Analyst &bull; Data Scientist &bull; ML Enthusiast
           </motion.h2>
         </div>
 
@@ -68,7 +68,7 @@ export default function MinimalHero() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-base md:text-lg text-muted max-w-2xl mx-auto leading-relaxed"
         >
-          Aspiring Data Analyst and Data Science professional with hands-on experience in Data Analytics, Machine Learning, Natural Language Processing, and Business Intelligence. Skilled in Python, SQL, Power BI, Tableau, and data visualization.
+          Aspiring Data Analyst with hands-on experience in Python, SQL, Power BI, Data Visualization, and Exploratory Data Analysis (EDA). Skilled in transforming raw data into actionable business insights through dashboards, statistical analysis, and reporting.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -106,7 +106,7 @@ export default function MinimalHero() {
               <GithubIcon className="w-4.5 h-4.5" />
             </a>
             <a
-              href="https://linkedin.com/in/bheema-boler-a7af3b1b6"
+              href="https://www.linkedin.com/in/bheema-lingappa-a7a6241b6"
               target="_blank"
               rel="noreferrer"
               className="p-3.5 bg-surface hover:bg-surface-secondary border border-surface-border rounded-xl text-muted hover:text-foreground transition-all duration-300"

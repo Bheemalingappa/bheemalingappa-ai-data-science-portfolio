@@ -15,24 +15,17 @@ interface Certificate {
 export default function Certifications() {
   const list: Certificate[] = [
     {
-      title: "Data Science & Data Analytics Internship",
+      title: "Data Science & Data Analytics Internship Certificate",
       issuer: "Cognifyz Technologies",
       category: "Internship",
       skills: ["Python", "Pandas & NumPy", "SQL Queries", "Exploratory Data Analysis", "Dashboard Reports"],
       date: "2025",
     },
     {
-      title: "Data Science Training Program",
+      title: "Data Science & Analytics Training Program",
       issuer: "Simplilearn",
       category: "Professional Training",
       skills: ["Data Analytics", "Machine Learning Core", "SQL", "Power BI & Tableau", "Clustering & Regression"],
-      date: "2025",
-    },
-    {
-      title: "Professional Certification Portfolio",
-      issuer: "Google Drive Repository",
-      category: "Credential Archive",
-      skills: ["Certification Auditing", "Credentials Hosting", "Work Verification", "Project Hosting"],
       date: "2025",
     },
   ];
@@ -58,7 +51,7 @@ export default function Certifications() {
         </div>
 
         {/* Certificate Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-6">
           {list.map((cert, index) => (
             <motion.div
               key={index}
