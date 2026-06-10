@@ -1,6 +1,12 @@
 "use client";
 
 import React from "react";
+import { GithubIcon } from "./icons";
+
+interface ProjectLink {
+  label: string;
+  url: string;
+}
 
 interface ProjectCase {
   title: string;
@@ -9,6 +15,7 @@ interface ProjectCase {
   tech: string[];
   metric: string;
   metricLabel: string;
+  links: ProjectLink[];
 }
 
 export default function MinimalProjects() {
@@ -25,6 +32,9 @@ export default function MinimalProjects() {
       tech: ["Python", "NLP", "Streamlit", "Flask", "Twitter API", "RoBERTa", "VADER", "Detoxify"],
       metric: "95.7%",
       metricLabel: "Accuracy Score",
+      links: [
+        { label: "GitHub Repository", url: "https://github.com/Bheemalingappa" }
+      ],
     },
     {
       title: "Jarvis AI Assistant",
@@ -38,6 +48,9 @@ export default function MinimalProjects() {
       tech: ["Python", "NLP", "Speech Recognition", "TTS", "OS Automation"],
       metric: "120ms",
       metricLabel: "Command Latency",
+      links: [
+        { label: "GitHub Repository", url: "https://github.com/Bheemalingappa" }
+      ],
     },
     {
       title: "Customer Churn Prediction Pipeline",
@@ -51,19 +64,26 @@ export default function MinimalProjects() {
       tech: ["Python", "Scikit-Learn", "XGBoost", "SMOTE", "Exploratory Data Analysis"],
       metric: "0.923",
       metricLabel: "AUC-ROC Score",
+      links: [
+        { label: "GitHub Repository", url: "https://github.com/Bheemalingappa" }
+      ],
     },
     {
-      title: "Sales Intelligence BI Dashboard",
+      title: "Superstore Sales Analysis & Dashboard",
       category: "Business Intelligence & Visualization",
       description: [
-        "Designed clean SQL database schemas to combine regional transactions.",
-        "Formulated complex DAX query measures for rolling averages and year-over-year growth.",
-        "Developed interactive reports in Power BI and Tableau to track core sales KPIs.",
-        "Improved cross-team sales forecasting latency and visualization clarity."
+        "Performed transactional SQL queries and Python-based exploratory analysis on retail dataset.",
+        "Designed an interactive Power BI dashboard featuring dynamic KPIs, sales forecasts, and performance metrics.",
+        "Formulated complex DAX query measures for rolling averages, target variances, and year-over-year growth.",
+        "Documented end-to-end data modeling, ETL cleaning processes, and database optimizations."
       ],
-      tech: ["Power BI", "Tableau", "SQL Queries", "DAX Formulas", "Data Modeling"],
+      tech: ["Power BI", "SQL", "Python", "DAX Formulas", "Data Modeling", "ETL"],
       metric: "60%",
-      metricLabel: "Data Load Speedup",
+      metricLabel: "Load Speedup",
+      links: [
+        { label: "Sales Analysis Repo", url: "https://github.com/Bheemalingappa/Superstore-Sales-Analysis" },
+        { label: "PowerBI Dashboard Repo", url: "https://github.com/Bheemalingappa/Superstore-PowerBI-Dashboard" }
+      ],
     },
   ];
 
@@ -112,6 +132,24 @@ export default function MinimalProjects() {
                     </span>
                   ))}
                 </div>
+
+                {/* GitHub Links */}
+                {c.links && c.links.length > 0 && (
+                  <div className="flex flex-wrap gap-4 pt-2 border-t border-surface-border/10">
+                    {c.links.map((link, lIdx) => (
+                      <a
+                        key={lIdx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center space-x-1.5 text-xs text-primary hover:text-primary-hover font-semibold transition-all duration-300"
+                      >
+                        <GithubIcon className="w-4 h-4 text-muted hover:text-primary transition-colors" />
+                        <span>{link.label}</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Bold stats card */}
