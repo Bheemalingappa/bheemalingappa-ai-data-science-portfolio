@@ -21,6 +21,7 @@ interface ProjectCase {
 }
 
 export default function MinimalProjects() {
+  // Updated with DataVision, McDonald's, Superstore, and Twitter Sentiment projects
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const cases: ProjectCase[] = [
