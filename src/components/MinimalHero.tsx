@@ -9,7 +9,7 @@ export default function MinimalHero() {
   const stats = [
     { value: "2", label: "Internships & Trainings" },
     { value: "8", label: "Core Skill Categories" },
-    { value: "2", label: "Key AI Projects" },
+    { value: "5", label: "Analytics & AI Projects" },
     { value: "3", label: "Verified Credentials" },
   ];
 

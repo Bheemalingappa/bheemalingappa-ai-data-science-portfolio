@@ -25,6 +25,22 @@ export default function MinimalProjects() {
 
   const cases: ProjectCase[] = [
     {
+      title: "DataVision — InsightFlow AI Platform",
+      category: "AI & Data Analytics Platform",
+      description: [
+        "Automated complete data analytics lifecycle: Data Collection, ETL Data Cleaning, Business Analytics, and AI Insights.",
+        "Architected backend REST APIs and WebSockets using FastAPI, PostgreSQL, and Pandas.",
+        "Engineered responsive frontend dashboard in React, TypeScript, and Tailwind CSS for real-time data exploration.",
+        "Integrated AI-driven statistical insights engine for automated business intelligence reporting."
+      ],
+      tech: ["FastAPI", "React", "TypeScript", "PostgreSQL", "Pandas", "WebSockets", "Python", "Tailwind CSS"],
+      metric: "ETL + AI",
+      metricLabel: "Full Lifecycle Platform",
+      links: [
+        { label: "Repository", url: "https://github.com/Bheemalingappa/DataVision" }
+      ],
+    },
+    {
       title: "McDonald's Menu Analytics Dashboard",
       category: "Business Intelligence & Nutrition Analytics",
       description: [
