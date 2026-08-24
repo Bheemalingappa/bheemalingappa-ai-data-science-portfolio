@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import { Eye, X, Image as ImageIcon } from "lucide-react";
 import { GithubIcon } from "./icons";
 
 interface ProjectLink {
@@ -16,10 +17,30 @@ interface ProjectCase {
   metric: string;
   metricLabel: string;
   links: ProjectLink[];
+  image?: string;
 }
 
 export default function MinimalProjects() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const cases: ProjectCase[] = [
+    {
+      title: "McDonald's Menu Analytics Dashboard",
+      category: "Business Intelligence & Nutrition Analytics",
+      description: [
+        "Designed dynamic Executive Overview & Menu & Nutrition Performance dashboards in Power BI analyzing 42 McDonald's menu items.",
+        "Tracked core nutritional metrics including Calories (327.5 Kcal Avg, 832.7 Kcal Max), Sodium (474.3 mg Avg), Sugar (13.3 g Avg), Fat, and Protein (10.25 g Avg).",
+        "Built Top-10 ranking visualizations for highest and lowest calorie, sugar, sodium, and fat items (e.g. Veg & Chicken Maharaja Mac).",
+        "Engineered multi-variable scatter plots (Calories vs Protein, Sugar vs Calories, Fat vs Sodium) with Category and Serving Unit dynamic slicers."
+      ],
+      tech: ["Power BI", "DAX", "Data Analytics", "Nutrition Insights", "Data Visualization"],
+      metric: "42",
+      metricLabel: "Menu Items Analyzed",
+      links: [
+        { label: "Repository", url: "https://github.com/Bheemalingappa/mcdonalds-menu-analytics-powerbi" }
+      ],
+      image: "/projects/mcdonalds-dashboard.jpg",
+    },
     {
       title: "Superstore Sales Analysis (Python)",
       category: "Data Analytics & EDA",
@@ -66,7 +87,7 @@ export default function MinimalProjects() {
       tech: ["Python", "NLP", "Streamlit", "Flask", "Twitter API", "RoBERTa", "VADER", "Detoxify"],
       metric: "95.7%",
       metricLabel: "Accuracy Score",
-      links: [], // No repo link on the resume for this one
+      links: [],
     },
   ];
 
@@ -116,34 +137,85 @@ export default function MinimalProjects() {
                   ))}
                 </div>
 
-                {/* GitHub Links */}
-                {c.links && c.links.length > 0 && (
-                  <div className="flex flex-wrap gap-4 pt-2 border-t border-surface-border/10">
-                    {c.links.map((link, lIdx) => (
-                      <a
-                        key={lIdx}
-                        href={link.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center space-x-1.5 text-xs text-primary hover:text-primary-hover font-semibold transition-all duration-300"
-                      >
-                        <GithubIcon className="w-4 h-4 text-muted hover:text-primary transition-colors" />
-                        <span>{link.label}</span>
-                      </a>
-                    ))}
-                  </div>
-                )}
+                {/* GitHub Links & Image Preview Button */}
+                <div className="flex flex-wrap items-center gap-4 pt-2 border-t border-surface-border/10">
+                  {c.links && c.links.length > 0 && c.links.map((link, lIdx) => (
+                    <a
+                      key={lIdx}
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center space-x-1.5 text-xs text-primary hover:text-primary-hover font-semibold transition-all duration-300"
+                    >
+                      <GithubIcon className="w-4 h-4 text-muted hover:text-primary transition-colors" />
+                      <span>{link.label}</span>
+                    </a>
+                  ))}
+
+                  {c.image && (
+                    <button
+                      onClick={() => setSelectedImage(c.image || null)}
+                      className="inline-flex items-center space-x-1.5 text-xs text-secondary hover:text-secondary-hover font-semibold transition-all duration-300"
+                    >
+                      <Eye className="w-4 h-4 text-secondary" />
+                      <span>View Dashboard Preview</span>
+                    </button>
+                  )}
+                </div>
               </div>
 
-              {/* Bold stats card */}
-              <div className="md:col-span-3 bg-surface-secondary/30 border border-surface-border/40 rounded-xl p-4 text-center space-y-1">
-                <div className="text-2xl font-extrabold font-mono text-gradient-primary">{c.metric}</div>
-                <div className="text-[9px] text-muted uppercase font-mono tracking-wider">{c.metricLabel}</div>
+              {/* Bold stats card & thumbnail */}
+              <div className="md:col-span-3 flex flex-col items-center justify-center space-y-3">
+                {c.image && (
+                  <button
+                    onClick={() => setSelectedImage(c.image || null)}
+                    className="w-full relative group overflow-hidden rounded-xl border border-surface-border/50 aspect-video bg-surface-secondary/40"
+                  >
+                    <img
+                      src={c.image}
+                      alt={`${c.title} Preview`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-1.5 text-xs font-semibold text-white">
+                      <ImageIcon className="w-4 h-4" />
+                      <span>Preview</span>
+                    </div>
+                  </button>
+                )}
+
+                <div className="w-full bg-surface-secondary/30 border border-surface-border/40 rounded-xl p-4 text-center space-y-1">
+                  <div className="text-2xl font-extrabold font-mono text-gradient-primary">{c.metric}</div>
+                  <div className="text-[9px] text-muted uppercase font-mono tracking-wider">{c.metricLabel}</div>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Lightbox Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 bg-background/90 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="relative max-w-5xl w-full bg-surface border border-surface-border rounded-2xl p-4 space-y-4 shadow-2xl">
+            <div className="flex justify-between items-center pb-2 border-b border-surface-border/40">
+              <span className="text-xs font-mono text-muted uppercase font-semibold">Dashboard Preview</span>
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="p-1.5 rounded-lg bg-surface-secondary hover:bg-surface-border text-muted hover:text-foreground transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="overflow-hidden rounded-xl border border-surface-border/40 max-h-[75vh]">
+              <img
+                src={selectedImage}
+                alt="Dashboard Full Preview"
+                className="w-full h-full object-contain max-h-[70vh] mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
