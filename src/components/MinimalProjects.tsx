@@ -21,90 +21,52 @@ interface ProjectCase {
 }
 
 export default function MinimalProjects() {
-  // Updated with DataVision, McDonald's, Superstore, and Twitter Sentiment projects
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const cases: ProjectCase[] = [
     {
-      title: "DataVision — InsightFlow AI Platform",
-      category: "AI & Data Analytics Platform",
-      description: [
-        "Automated complete data analytics lifecycle: Data Collection, ETL Data Cleaning, Business Analytics, and AI Insights.",
-        "Architected backend REST APIs and WebSockets using FastAPI, PostgreSQL, and Pandas.",
-        "Engineered responsive frontend dashboard in React, TypeScript, and Tailwind CSS for real-time data exploration.",
-        "Integrated AI-driven statistical insights engine for automated business intelligence reporting."
-      ],
-      tech: ["FastAPI", "React", "TypeScript", "PostgreSQL", "Pandas", "WebSockets", "Python", "Tailwind CSS"],
-      metric: "ETL + AI",
-      metricLabel: "Full Lifecycle Platform",
-      links: [
-        { label: "Repository", url: "https://github.com/Bheemalingappa/DataVision" }
-      ],
-    },
-    {
-      title: "McDonald's Menu Analytics Dashboard",
+      title: "McDonald's Menu Analytics Dashboard — Power BI",
       category: "Business Intelligence & Nutrition Analytics",
       description: [
-        "Designed dynamic Executive Overview & Menu & Nutrition Performance dashboards in Power BI analyzing 42 McDonald's menu items.",
-        "Tracked core nutritional metrics including Calories (327.5 Kcal Avg, 832.7 Kcal Max), Sodium (474.3 mg Avg), Sugar (13.3 g Avg), Fat, and Protein (10.25 g Avg).",
-        "Built Top-10 ranking visualizations for highest and lowest calorie, sugar, sodium, and fat items (e.g. Veg & Chicken Maharaja Mac).",
-        "Engineered multi-variable scatter plots (Calories vs Protein, Sugar vs Calories, Fat vs Sodium) with Category and Serving Unit dynamic slicers."
+        "Designed an interactive Power BI dashboard analyzing McDonald's menu and nutrition dataset across 260+ products, covering category-wise breakdowns and product-level nutrition values.",
+        "Engineered Power Query (ETL) transformations and DAX measures to clean, model, and calculate 5 key nutrition KPIs — calories, protein, sodium, sugar, and fat — across menu categories.",
+        "Published a two-page dashboard (Overview and Menu & Nutrition pages) enabling category-wise and product-wise comparisons, along with dataset, .pbix file, and recorded demo."
       ],
-      tech: ["Power BI", "DAX", "Data Analytics", "Nutrition Insights", "Data Visualization"],
-      metric: "42",
-      metricLabel: "Menu Items Analyzed",
+      tech: ["Power BI", "Power Query", "DAX", "Data Cleaning", "Data Visualization", "GitHub"],
+      metric: "260+",
+      metricLabel: "Products Analyzed",
       links: [
         { label: "Repository", url: "https://github.com/Bheemalingappa/mcdonalds-menu-analytics-powerbi" }
       ],
       image: "/projects/mcdonalds-dashboard.jpg",
     },
     {
-      title: "Superstore Sales Analysis (Python)",
-      category: "Data Analytics & EDA",
+      title: "DataVision — End-to-End Data Analytics Workflow Platform",
+      category: "Full-Stack Data Engineering & Analytics",
       description: [
-        "Performed end-to-end analysis on 9,800+ retail sales records using Python and Pandas.",
-        "Conducted data cleaning, preprocessing, and exploratory data analysis (EDA).",
-        "Analyzed regional performance, customer segments, category-wise sales, and monthly sales trends.",
-        "Created visualizations using Matplotlib and Seaborn to generate business insights.",
-        "Published project documentation and analysis workflow on GitHub."
+        "Architected a full-stack analytics platform automating a 5-stage ETL and analytics workflow — data collection, data cleansing, data integration, analysis, visualization, and AI-generated insights — across 13 data sources, with a PostgreSQL backend.",
+        "Automated an ETL pipeline and data flows for outlier detection and missing-value imputation to improve data quality and data integrity, paired with a dashboarding frontend for business reporting.",
+        "Deployed role-based dashboards with process automation for report scheduling, reducing weekly reporting turnaround time for analysts."
       ],
-      tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
-      metric: "9.8K+",
-      metricLabel: "Records Analyzed",
+      tech: ["FastAPI", "PostgreSQL", "React", "TypeScript", "Pandas", "Scikit-learn"],
+      metric: "5-Stage",
+      metricLabel: "ETL & Analytics Workflow",
       links: [
-        { label: "Repository", url: "https://github.com/Bheemalingappa/Superstore-Sales-Analysis" }
-      ],
-    },
-    {
-      title: "Superstore Sales Analysis (Power BI)",
-      category: "Business Intelligence & Visualization",
-      description: [
-        "Designed and developed an interactive sales analytics dashboard using Power BI.",
-        "Built KPI cards for Total Sales, Total Orders, and Total Customers.",
-        "Created regional sales analysis, category performance reports, and customer segmentation dashboards.",
-        "Implemented dynamic filtering using Region and State slicers.",
-        "Enabled data-driven decision-making through business intelligence visualizations."
-      ],
-      tech: ["Power BI", "DAX", "Business Intelligence", "Data Visualization"],
-      metric: "KPIs",
-      metricLabel: "Dynamic Cards",
-      links: [
-        { label: "Repository", url: "https://github.com/Bheemalingappa/Superstore-PowerBI-Dashboard" }
+        { label: "Repository", url: "https://github.com/Bheemalingappa/DataVision" }
       ],
     },
     {
       title: "Twitter Sentiment Analysis Web Application",
-      category: "Natural Language Processing",
+      category: "Natural Language Processing & Analytics",
       description: [
-        "Developed a real-time Twitter sentiment analysis platform for social media analytics.",
-        "Implemented RoBERTa Transformer, VADER Sentiment Analysis, Emotion Classification, and Toxicity Detection.",
-        "Integrated Twitter APIs for real-time tweet collection and sentiment monitoring.",
-        "Built interactive dashboards to visualize sentiment trends and business insights."
+        "Created a real-time sentiment-analysis dashboard on live social data, visualizing trends for faster business response."
       ],
-      tech: ["Python", "NLP", "Streamlit", "Flask", "Twitter API", "RoBERTa", "VADER", "Detoxify"],
-      metric: "95.7%",
-      metricLabel: "Accuracy Score",
-      links: [],
+      tech: ["Python", "NLP", "Streamlit", "Twitter API"],
+      metric: "Real-time",
+      metricLabel: "Social Sentiment Monitoring",
+      links: [
+        { label: "Repository", url: "https://github.com/Bheemalingappa" }
+      ],
     },
   ];
 
@@ -116,7 +78,7 @@ export default function MinimalProjects() {
           <h2 className="text-xs font-mono tracking-widest text-primary font-bold uppercase mb-2">
             03 / Projects
           </h2>
-          <h3 className="text-3xl font-extrabold tracking-tight">Case Studies</h3>
+          <h3 className="text-3xl font-extrabold tracking-tight">Case Studies &amp; Projects</h3>
         </div>
 
         {/* Projects Cards List */}

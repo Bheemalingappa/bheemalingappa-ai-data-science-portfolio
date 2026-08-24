@@ -7,10 +7,10 @@ import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function MinimalHero() {
   const stats = [
-    { value: "2", label: "Internships & Trainings" },
-    { value: "8", label: "Core Skill Categories" },
-    { value: "5", label: "Analytics & AI Projects" },
-    { value: "3", label: "Verified Credentials" },
+    { value: "260+", label: "Menu Items Analyzed" },
+    { value: "4", label: "Analytics Projects Delivered" },
+    { value: "2", label: "Analytics Internships / Traineeships" },
+    { value: "8+", label: "Core BI & Engineering Domains" },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function MinimalHero() {
           className="inline-flex items-center space-x-2 bg-surface/50 border border-surface-border/40 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md"
         >
           <Sparkles className="w-3.5 h-3.5 text-secondary animate-pulse" />
-          <span className="text-muted">Data Analyst &bull; Data Scientist &bull; ML Enthusiast</span>
+          <span className="text-muted">Business Intelligence &bull; Data Analytics &bull; ETL Pipelines</span>
         </motion.div>
 
         <div className="space-y-4">
@@ -58,7 +58,7 @@ export default function MinimalHero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-xl md:text-2xl font-bold font-mono tracking-tight text-foreground/80 mt-2"
           >
-            Data Analyst &bull; Data Scientist &bull; ML Enthusiast
+            Business Intelligence &amp; Data Analytics Professional
           </motion.h2>
         </div>
 
@@ -68,7 +68,7 @@ export default function MinimalHero() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-base md:text-lg text-muted max-w-2xl mx-auto leading-relaxed"
         >
-          Aspiring Data Analyst with hands-on experience in Python, SQL, Power BI, Data Visualization, and Exploratory Data Analysis (EDA). Skilled in transforming raw data into actionable business insights through dashboards, statistical analysis, and reporting.
+          Early-career Business Intelligence / Data Analytics professional with hands-on experience in Power BI, DAX, Power Query, SQL, Python, ETL pipelines, KPI dashboards, and data visualization. Skilled in end-to-end BI workflows — from SQL data extraction and transformation to interactive dashboards.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -106,7 +106,7 @@ export default function MinimalHero() {
               <GithubIcon className="w-4.5 h-4.5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/bheema-lingappa-a7a6241b6"
+              href="https://www.linkedin.com/in/bheema-lingappa"
               target="_blank"
               rel="noreferrer"
               className="p-3.5 bg-surface hover:bg-surface-secondary border border-surface-border rounded-xl text-muted hover:text-foreground transition-all duration-300"

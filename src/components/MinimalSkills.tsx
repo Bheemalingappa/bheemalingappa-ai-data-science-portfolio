@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Code2, Library, BarChart3, Brain, Languages, PieChart, Database, Terminal } from "lucide-react";
+import { BarChart3, Database, Code2, LineChart, Layers, Terminal, Users, Globe } from "lucide-react";
 
 interface SkillSet {
   category: string;
@@ -12,44 +12,44 @@ interface SkillSet {
 export default function MinimalSkills() {
   const skills: SkillSet[] = [
     {
-      category: "Programming Languages",
-      icon: <Code2 className="w-4 h-4 text-primary" />,
-      tools: ["Python", "SQL"],
+      category: "Business Intelligence & Visualization",
+      icon: <BarChart3 className="w-4 h-4 text-primary" />,
+      tools: ["Power BI", "DAX", "Power Query", "Tableau", "Advanced Excel", "Data Visualization", "KPI Dashboards", "Dashboard Development"],
     },
     {
-      category: "Python Libraries",
-      icon: <Library className="w-4 h-4 text-secondary" />,
-      tools: ["Pandas", "NumPy", "Scikit-Learn", "Matplotlib", "Seaborn", "Plotly", "NLTK", "Transformers"],
+      category: "Data Engineering",
+      icon: <Database className="w-4 h-4 text-secondary" />,
+      tools: ["SQL", "SQL Queries", "ETL", "ETL Pipelines", "Data Pipelines", "Data Transformation", "Data Preparation", "Data Integration", "Data Flows", "Process Automation"],
     },
     {
-      category: "Data Analytics",
-      icon: <BarChart3 className="w-4 h-4 text-accent" />,
-      tools: ["Data Cleaning", "Data Wrangling", "Exploratory Data Analysis (EDA)", "Statistical Analysis", "KPI Analysis"],
+      category: "Data & Programming",
+      icon: <Code2 className="w-4 h-4 text-accent" />,
+      tools: ["Python", "Pandas", "NumPy"],
     },
     {
-      category: "Machine Learning",
-      icon: <Brain className="w-4 h-4 text-primary" />,
-      tools: ["Regression", "Classification", "Clustering", "Feature Engineering", "Model Evaluation"],
+      category: "Analytics",
+      icon: <LineChart className="w-4 h-4 text-primary" />,
+      tools: ["KPI Analysis", "Predictive Analytics", "Forecasting", "Machine Learning", "Root Cause Analysis", "Business Analytics", "Reporting & Analytics"],
     },
     {
-      category: "Natural Language Processing",
-      icon: <Languages className="w-4 h-4 text-secondary" />,
-      tools: ["Sentiment Analysis", "Text Preprocessing", "Tokenization", "Transformer Models"],
+      category: "Data Architecture",
+      icon: <Layers className="w-4 h-4 text-secondary" />,
+      tools: ["Data Modeling", "Data Quality", "Data Integrity", "Data Governance"],
     },
     {
-      category: "Visualization Tools",
-      icon: <PieChart className="w-4 h-4 text-accent" />,
-      tools: ["Power BI", "Tableau", "Plotly", "Matplotlib", "Seaborn"],
+      category: "Databases & Tools",
+      icon: <Terminal className="w-4 h-4 text-accent" />,
+      tools: ["MySQL", "PostgreSQL", "Git", "GitHub", "Jupyter Notebook", "VS Code"],
     },
     {
-      category: "Databases",
-      icon: <Database className="w-4 h-4 text-primary" />,
-      tools: ["MySQL", "NoSQL"],
+      category: "Soft Skills",
+      icon: <Users className="w-4 h-4 text-primary" />,
+      tools: ["Stakeholder Reporting", "Cross-Functional Collaboration", "Stakeholder-Focused Data Storytelling"],
     },
     {
-      category: "Tools & Platforms",
-      icon: <Terminal className="w-4 h-4 text-secondary" />,
-      tools: ["Git", "GitHub", "Streamlit", "Flask", "Jupyter Notebook", "VS Code", "Google Colab"],
+      category: "Languages",
+      icon: <Globe className="w-4 h-4 text-secondary" />,
+      tools: ["Fluent in English", "Native Proficiency in Kannada & Telugu"],
     },
   ];
 

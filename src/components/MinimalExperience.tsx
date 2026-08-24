@@ -18,25 +18,22 @@ export default function MinimalExperience() {
       role: "Data Science & Data Analytics Intern",
       duration: "2025",
       description: [
-        "Performed data cleaning, preprocessing, and exploratory data analysis using Python, Pandas, and NumPy.",
-        "Created visualizations using Matplotlib and Seaborn to identify business trends and insights.",
-        "Worked with SQL queries for data extraction, transformation, and reporting.",
-        "Applied machine learning techniques for predictive analytics and model evaluation.",
-        "Generated dashboard-ready reports for business intelligence applications."
+        "Implemented SQL queries and SQL-based ETL pipelines to extract, transform, and load data across recurring analytics workflows, replacing manual reporting with automated data flows.",
+        "Analyzed 3 end-to-end business datasets using Python, Pandas, and NumPy, applying root cause analysis to surface KPIs and trends that directly informed stakeholder decisions.",
+        "Applied predictive modeling and machine learning (regression and classification) for forecasting, and prepared dashboard-ready BI reports used across cross-functional collaboration and stakeholder reporting."
       ],
-      skills: ["Python", "Pandas", "NumPy", "EDA", "SQL Queries", "Machine Learning", "Dashboard Reporting"],
+      skills: ["SQL Pipelines", "ETL", "Python", "Pandas", "NumPy", "Root Cause Analysis", "Predictive Modeling", "BI Reporting"],
     },
     {
       company: "Simplilearn (Remote)",
       role: "Data Science & Analytics Trainee",
       duration: "2025",
       description: [
-        "Completed practical training in Data Analytics, Machine Learning, and Business Intelligence.",
-        "Developed mini-projects using Python, SQL, Power BI, and Tableau.",
-        "Implemented regression, classification, and clustering algorithms on real-world datasets.",
-        "Strengthened analytical and reporting skills through hands-on case studies."
+        "Developed 4 applied mini-projects using Python, SQL, Power BI, and Tableau, implementing regression, classification, and clustering for business analytics use cases.",
+        "Completed structured training across 5 core BI/ETL domains — ETL, data transformation, data integration, KPI reporting, and business intelligence dashboard development.",
+        "Delivered analytical reports across 4 applied case studies, strengthening stakeholder-focused data storytelling."
       ],
-      skills: ["Data Analytics", "Machine Learning", "Business Intelligence", "Python", "SQL", "Power BI", "Tableau"],
+      skills: ["Power BI", "Tableau", "SQL", "Python", "ETL Domains", "KPI Reporting", "Clustering & Regression", "Data Storytelling"],
     },
   ];
 
@@ -48,7 +45,7 @@ export default function MinimalExperience() {
           <h2 className="text-xs font-mono tracking-widest text-primary font-bold uppercase mb-2">
             05 / Career
           </h2>
-          <h3 className="text-3xl font-extrabold tracking-tight">Work Experience</h3>
+          <h3 className="text-3xl font-extrabold tracking-tight">Internship & Traineeship Experience</h3>
         </div>
 
         {/* Experience Cards */}

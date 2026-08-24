@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Award, ShieldCheck, CheckCircle2, Bookmark } from "lucide-react";
+import { Award, ShieldCheck, Bookmark, ExternalLink } from "lucide-react";
 
 interface Certificate {
   title: string;
@@ -15,17 +15,17 @@ interface Certificate {
 export default function Certifications() {
   const list: Certificate[] = [
     {
-      title: "Data Science & Data Analytics Internship Certificate",
+      title: "Data Analytics Internship Certificate",
       issuer: "Cognifyz Technologies",
-      category: "Internship",
-      skills: ["Python", "Pandas & NumPy", "SQL Queries", "Exploratory Data Analysis", "Dashboard Reports"],
+      category: "Internship Credential",
+      skills: ["SQL Pipelines", "Python Analytics", "Root Cause Analysis", "BI Dashboards"],
       date: "2025",
     },
     {
-      title: "Data Science & Analytics Training Program",
+      title: "Data Science & Analytics Program",
       issuer: "Simplilearn",
       category: "Professional Training",
-      skills: ["Data Analytics", "Machine Learning Core", "SQL", "Power BI & Tableau", "Clustering & Regression"],
+      skills: ["ETL Domains", "Power BI", "Tableau", "SQL", "KPI Reporting"],
       date: "2025",
     },
   ];
@@ -38,15 +38,15 @@ export default function Certifications() {
       <div className="max-w-6xl w-full mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
           <h2 className="text-xs font-mono tracking-widest text-primary font-bold uppercase mb-3">
             07 / Credentials
           </h2>
           <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight">
             Verified Certifications
           </h3>
-          <p className="text-muted mt-4 text-base md:text-lg">
-            A listing of my specialized courses, internships, and structured data credentials.
+          <p className="text-muted text-base md:text-lg">
+            Specialized internship credentials and structured Data Science &amp; Analytics training programs.
           </p>
         </div>
 

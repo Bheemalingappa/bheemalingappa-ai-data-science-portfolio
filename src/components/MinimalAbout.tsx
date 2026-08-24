@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { BookOpen, Compass, Code, BrainCircuit, Target } from "lucide-react";
 
 interface TimelineItem {
@@ -14,27 +13,27 @@ interface TimelineItem {
 export default function MinimalAbout() {
   const timeline: TimelineItem[] = [
     {
-      year: "2022",
-      title: "Academic Foundation",
-      description: "Began Bachelor of Engineering (B.E.) at AMC Engineering College, focusing on programming, databases, and core computer science concepts.",
+      year: "2022 - 2026",
+      title: "Bachelor of Engineering (B.E.)",
+      description: "Computer Science and Data Science specialization at AMC Engineering College, Bengaluru (CGPA: 7.23 / 10).",
       icon: <Code className="w-4 h-4" />,
     },
     {
       year: "2025",
-      title: "Hands-on Industry Practice",
-      description: "Completed Data Science & Analytics training with Simplilearn, followed by a Data Science & Data Analytics Internship at Cognifyz Technologies.",
+      title: "Data Science & Analytics Trainee",
+      description: "Simplilearn — Completed structured training across 5 core BI/ETL domains and developed 4 applied mini-projects.",
       icon: <Compass className="w-4 h-4" />,
     },
     {
       year: "2025",
-      title: "AI & NLP Development",
-      description: "Engineered real-time Twitter sentiment analysis systems using RoBERTa and developed the voice-controlled Jarvis AI assistant.",
+      title: "Data Science & Analytics Intern",
+      description: "Cognifyz Technologies — Built automated SQL ETL pipelines, root cause analysis, and cross-functional BI reports.",
       icon: <BrainCircuit className="w-4 h-4" />,
     },
     {
       year: "2026",
-      title: "Professional Launch",
-      description: "Graduating with B.E. degree (CGPA: 7.23/10) and actively stepping into full-time roles in Data Analytics & Data Science.",
+      title: "Graduation & Career Launch",
+      description: "Graduated with B.E. degree and actively deploying end-to-end Business Intelligence & Data Analytics solutions.",
       icon: <Target className="w-4 h-4" />,
     },
   ];
@@ -58,13 +57,13 @@ export default function MinimalAbout() {
               <span>Professional Summary</span>
             </h4>
             <p>
-              I am an aspiring Data Analyst with hands-on experience in Python, SQL, Power BI, Data Visualization, and Exploratory Data Analysis (EDA). I specialize in transforming raw data into actionable business insights through dashboards, statistical analysis, and reporting.
+              Early-career Business Intelligence / Data Analytics professional with hands-on experience in Power BI, DAX, Power Query, SQL, Python, ETL pipelines, data pipelines, KPI dashboards, dashboard development, data visualization, predictive analytics, and reporting & analytics.
             </p>
             <p>
-              My expertise covers writing optimized SQL queries, conducting exploratory analysis, constructing predictive modeling pipelines, and building interactive business intelligence dashboards.
+              Skilled in end-to-end BI workflows — from SQL-based data extraction, data transformation, and data preparation to data modeling and interactive dashboards — with project experience in retail and nutrition analytics, forecasting, and cross-functional stakeholder reporting.
             </p>
             <p>
-              I hold a Bachelor of Engineering (B.E.) degree from AMC Engineering College, Bengaluru (2022 - 2026) with a CGPA of 7.23 / 10, bringing solid academic and practical foundations.
+              I hold a Bachelor of Engineering (B.E.) in Computer Science and Data Science from AMC Engineering College, Bengaluru (Graduated 2026, CGPA: 7.23 / 10).
             </p>
           </div>
 
